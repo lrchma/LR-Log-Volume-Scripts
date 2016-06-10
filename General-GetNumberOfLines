@@ -1,0 +1,2 @@
+#Use PowerShell measure cmdlet to get number of entries in a log file
+Get-Content "C:\tmp\MSGTRK20160523-1.LOG" | Measure-Object –Line
