@@ -1,0 +1,7 @@
+$StartDate=$args[0]
+$EndDate=$args[1]
+$Lines=$args[2]
+$Duration = New-Timespan –Start $StartDate –End $EndDate
+$MPStemp =  $Lines / $Duration.TotalSeconds
+$MPS = $MPStemp -replace "-"
+Write-Host "MPS :" $MPS
